@@ -6,76 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitio Web Imagen Escrita</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Style général pour le conteneur */
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 150px;
+        }
+
+        /* Texte caché par défaut */
+        .hover-text {
+            visibility: hidden;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            font-size: 14px;
+            top: 105%;
+            left: 20%; /* Placer à droite de l'image */
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        /* Afficher le texte au survol */
+        .image-container:hover .hover-text {
+            visibility: visible;
+        }
+
+        /* Style de l'image */
+        .hover-image {
+            display: block;
+            max-width: 100%; /* Ajuster la taille de l'image */
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Contenedor principal -->
+    <!-- Conteneur principal -->
     <main>
 
-        <!-- Título principal -->
+        <!-- Titre principal -->
         <div class="title">
-            <h1>Line Bruneau</h1>
+            <h1>Cuidado, hay cosas de todas partes ...</h1>
         </div>
 
-        <!-- Contenedor lado izquierdo de la página -->
+        <!-- Conteneur côté gauche -->
         <div id="left">
-
-            <!-- Contenedor párrafos + botón -->
             <div class="content">
-
-                <!-- párrafo -->
-                <p>Hola ! Aqui esta mi pagina web, bienvenido</p>
-
-                <p>Me llamo Line, vengo de Francia, y estoy aca para un ano. Estoy en tercero ano de arquitectura</p>
-
-                <!-- botón -->
+                <p>Bravo! Has descubierto que no estoy una página en blanco... Buen descubrimiento!</p>
+                <h2>Line Bruneau</h2>
                 <a href="https://enlace-a-la-wiki.com" target="_blank">
-                    <button>Ver proyecto en la wiki</button>
+                    <button>Aqui esta la entrada para LA famosa wiki</button>
                 </a>
-
+                <p>Un peu plus bas !</p>
             </div>
         </div>
 
-        <!-- Contenedor lado derecho de la página -->
-        <div id="right">
-
-            <!--Contenedor proyectos-->
-            <div class="proyectos">
-
+        <!-- Conteneur central avec des images -->
+        <div id="center">
+            <div class="proyectos center">
                 <nav>
+                <div class="image-container">
+                    <a href="sitio web ie/proyectos/Tarea 1/index.html">
+                    <img src="sitio web ie/img/tarea/tarea 1.jpg" alt="Tarea 1" class="hover-image">
+                    <span class="hover-text">Tarea 1:composición abstracta inspirada en las obras de Vera Molnár</span>
+                </a>
+             </div>
+             <div class="image-container">
+                    <a href="sitio web ie/proyectos/clase 3/clase 3-1/index.html">
+                    <img src="sitio web ie/proyectos/clase 3/img clase 3-1.jpg" alt="Exercice 1" class="hover-image">
+                    <span class="hover-text">Agario</span>
+                </a>
+             </div>
+             <div class="image-container">
+                     <a href="sitio web ie/proyectos/clase 3/clase 3-2/index.html">
+                    <img src="sitio web ie/proyectos/clase 3/img clase 3-2.jpg" alt="Exercice 2" class="hover-image">
+                    <span class="hover-text">Círculos concéntricos</span>
+                </a>
+             </div>
+             
+         </nav>
+     </div> 
+        </div>
 
-                    <!--imagenes con enlace a sketch-->
-                    <a href="proyectos/Tarea 1/index.html" target="_blank">
-                        <img src="img/tarea/tarea 1.jpg"> sketch 1 composición basada en la obra de Vera Molnar
+        <!-- Conteneur côté droit -->
+        <div id="right">
+            <div class="proyectos">
+                <nav>
+                    <div class="image-container">
+                        <a href="sitio web ie/proyectos/Tarea 2/index.html">
+                        <img src="sitio web ie/img/tarea/tarea2.jpg" alt="Sketch 5" class="hover-image">
+                        <span class="hover-text">Tarea 2: for loop y condicionales</span>
                     </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 2
+                    </div>
+                    <div class="image-container">
+                        <a href="sitio web ie/proyectos/Tarea 3/index.html">
+                        <img src="sitio web ie/img/tarea/tarea3.jpg" alt="Sketch 6" class="hover-image">
+                        <span class="hover-text">Tarea 3: Funciones de transformación</span>
                     </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 3
+                    </div>
+                    <div class="image-container">
+                        <a href="sitio web ie/proyectos/Tarea 4/index.html">
+                        <img src="sitio web ie/img/tarea/tarea4.jpg" alt="Sketch 7" class="hover-image">
+                        <span class="hover-text">Tarea 4: Funciones y Recursión</span>
                     </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 4
-                    </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 5
-                    </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 6
-                    </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 7
-                    </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 8
-                    </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 9
-                    </a>
+                    </div>
+                    <div class="repositorio"></div>
+                        <h3>
+                       Aqui está el fin del sitio, es solamente un inicio, 
+                       gracias por las clases! Va a ser muy útil para mí 
+                       durante todo mis estudios
+                    </h3>
+    
+                    </div>
                 </nav>
-
             </div>
-
+           
         </div>
 
     </main>
@@ -83,6 +131,3 @@
 </body>
 
 </html>
-
-</head>
-<body>
